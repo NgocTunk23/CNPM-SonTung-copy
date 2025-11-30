@@ -1,18 +1,11 @@
-# Tạo nội dung chuẩn cho .gitignore
-cat > .gitignore <<EOL
-venv/
-env/
-.env
+# Python garbage
 __pycache__/
-**/__pycache__/
-*.pyc
-*.pyo
-*.pyd
-.DS_Store
-Thumbs.db
-*.log
-npm-debug.log*
+*.py[cod]
+*$py.class
+venv/
+.env
+
+# Node garbage
 node_modules/
 dist/
-.idea/
-EOL
+.DS_Store
